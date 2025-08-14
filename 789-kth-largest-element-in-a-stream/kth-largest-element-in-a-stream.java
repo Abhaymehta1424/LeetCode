@@ -5,15 +5,16 @@ class KthLargest {
         this.k=k;
         for(int i : nums){
             pq.add(i);
-            if(pq.size() > k){
-                pq.poll();
-            }
+            // if(pq.size() > k){
+            //     pq.poll();
+            // }
         }
     }
     
     public int add(int val) {
         pq.add(val);
-        if(pq.size() > k){
+        // pq.poll();
+        while(pq.size() > k){
             pq.poll();
         }
         return pq.peek();
