@@ -1,13 +1,13 @@
 class Solution {
     public boolean doesAliceWin(String s) {
-        Set<Character> vowelset = Set.of('a','e','i','o','u');
-        int count = 0;
+        // Set<Character> vowelset = Set.of('a','e','i','o','u');
+        // int count = 0;
 
-        for(char ch : s.toCharArray()){
-            if(vowelset.contains(ch)){
-                count++;
-            }
-        }
+        // for(char ch : s.toCharArray()){
+        //     if(vowelset.contains(ch)){
+        //         count++;
+        //     }
+        // }
         // if(count == 1){
         //     return true;
         // }
@@ -18,7 +18,14 @@ class Solution {
         // if(count % 2 != 0 || count % 2 == 0){
         //     return true;
         // }
-        
-        return count > 0;
+        // return false;
+        // return count > 0;
+
+        for(char ch : s.toCharArray()){
+            if(ch == 'a' || ch == 'e' ||ch == 'i' ||ch == 'o' ||ch == 'u'){
+                return true;
+            }
+        }
+        return false;
     }
 }
