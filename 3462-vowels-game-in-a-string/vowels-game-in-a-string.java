@@ -8,17 +8,17 @@ class Solution {
                 count++;
             }
         }
-        if(count == 1){
-            return true;
-        }
-        if(count == 0 ){
-            return false;
-        }
+        // if(count == 1){
+        //     return true;
+        // }
+        // if(count == 0 ){
+        //     return false;
+        // }
         
-        if(count % 2 != 0 || count % 2 == 0){
-            return true;
-        }
+        // if(count % 2 != 0 || count % 2 == 0){
+        //     return true;
+        // }
         
-        return true;
+        return count > 0;
     }
 }
